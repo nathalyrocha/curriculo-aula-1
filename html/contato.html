@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.5">
+    
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overlock&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/850848e409.js" crossorigin="anonymous"></script>
+
+    <title>CV - Nathaly Rocha</title>
+  </head>
+
+  <body>
+      <form>
+        <header id="title">
+          <strong>Formulário de Contato</strong>
+        </header>
+    
+        <nav>
+          <a href="./index.html" class="nav-link">
+            <i class="nav-icon fas fa-arrow-alt-circle-left"></i>
+            <strong>Voltar ao currículo</strong>
+          </a>
+        </nav>
+
+        <section id="dados-pessoais">
+          <h2 class="subtitle"><em>Dados pessoais:</em></h2>
+          
+          <input 
+            class="dados-formulario" 
+            type="text" 
+            name="usuário" 
+            placeholder=" Nome" 
+            required 
+          />
+          <input 
+            class="dados-formulario" 
+            type="text" 
+            name="usuário" 
+            placeholder=" Sobrenome" 
+            required 
+          />
+          <input 
+            class="dados-formulario" 
+            type="email" 
+            name="usuário" 
+            placeholder=" contato@example.com" 
+            required 
+          />
+        </section>
+
+        <section id="assunto-mensagem">
+          <h2 class="subtitle"><em>Assunto da mensagem:</em></h2>
+
+          <select id="select" name="país">
+            <optgroup label="Assunto da mensagem">
+              <option value="musica">Música</option>
+              <option value="jogos">Jogos</option>
+              <option value="cultura">Cultura</option>
+            </optgroup>
+          </select>
+        </section>
+
+        <section id="genero">
+          <h2 class="subtitle"><em>Gênero:</em></h2>
+
+          <ul>
+            <li>Feminino<input type="radio" name="genero" value="Feminino" /></li>
+            <li>Masculino<input type="radio" name="genero" value="Masculino" /></li>
+            <li>Prefiro não responder<input type="radio" name="genero" value="Nulo" /></li>
+          </ul>
+        </section>
+
+        <section id="passatempos">
+          <h2 class="subtitle"><em>Passatempos:</em></h2>
+
+          <ul>
+            <li>Cantar<input type="checkbox" name="passatempo" value="cantar" /></li>
+            <li>Ouvir música<input type="checkbox" name="passatempo" value="musica" /></li>
+            <li>Ler<input type="checkbox" name="passatempo" value="ler" /></li>
+            <li>Assistir série<input type="checkbox" name="passatempo" value="filme" /></li>
+            <li>Tocar piano<input type="checkbox" name="passatempo" value="piano" /></li>
+          </ul>   
+        </section>   
+
+        <section id="comentarios">
+          <h2 class="subtitle"><em>Comentários:</em></h2>
+          
+          <textarea 
+            rows="4" 
+            cols="50" 
+            name="mensagem" 
+            style="resize: none;"
+            placeholder=" Escreva seu comentário aqui..."
+            required
+          ></textarea>
+
+          <button class="button-contact" type="submit">Enviar</button>
+          <button class="button-contact" type="reset">Excluir</button>
+        </section>
+      </form>
+  </body>
+</html>
